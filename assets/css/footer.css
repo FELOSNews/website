@@ -21,6 +21,15 @@
     font-size: 1.3vw;
 }
 
+.footer .links a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer .links a:hover {
+    text-decoration: underline;
+}
+
 .footer .links .felos {
     font-family: "Outfit Bold";
 
