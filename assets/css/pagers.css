@@ -1,0 +1,97 @@
+html, body {
+    height: 100%;
+
+    margin: 0;
+
+    text-transform: uppercase;
+}
+
+.articles {
+    height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.latestArticles {
+    width: 79.79vw;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: -1vh;
+}
+
+.article {
+    position: relative;
+
+    width: 26vw;
+    height: 20vh;
+}
+
+.cover {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    filter: brightness(0.8);
+}
+
+.infos {
+    text-align: right;
+
+    color: #FFFFFF;
+
+    margin-right: 2%;
+
+    position: absolute;
+    z-index: 1;
+    bottom: -1%;
+
+    margin-left: 39%;
+}
+
+.postURL {
+    text-decoration: none;
+}
+
+.infos .title {
+    font-family: "Outfit Bold";
+    
+    display: inline-block;
+}
+
+.article:hover .infos>.title {
+    text-decoration: underline;
+}
+
+.infos .title {
+    font-size: 1.4vw;
+    width: 15vw;
+}
+
+.infos .date {
+    font-family: "Outfit Bold";
+    font-size: 1vw;
+}
+
+.pagerButtons a {
+    text-decoration: none;
+}
+
+.pagerButtons button {
+    height: 5vh;
+
+    border: none;
+    border-radius: 5px;
+
+    color: #FFFFFF;
+    font-family: "Outfit SemiBold";
+    font-size: 2vh;
+
+    background: linear-gradient(90deg, #FF0000 0%, #FFFF00 115%);
+}

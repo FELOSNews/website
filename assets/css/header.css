@@ -1,0 +1,64 @@
+.content_container {
+    min-height: 91vh;
+}
+
+.head {
+    min-height: 21vh;
+
+    margin-bottom: -2vh;
+}
+
+.head .header {
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    flex-direction: column;
+
+    background: linear-gradient(90deg, #FF0000 0%, #FFFF00 100%);
+}
+.header .title {
+    font-family: "Outfit Black";
+
+    margin: 0;
+}
+
+.header .title a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 5vw;
+}
+
+.header .tagline {
+    font-family: "Outfit ExtraBold";
+
+    font-size: 1.5vw;
+}
+
+.navbar {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: solid #000000 3px;
+}
+
+.navbar a {
+    font-family: "Outfit Medium";
+    font-size: 1.5vw;
+
+    text-decoration: none;
+    
+    color: #000000;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}

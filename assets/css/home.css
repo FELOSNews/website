@@ -1,0 +1,113 @@
+html, body {
+    height: 100%;
+
+    margin: 0;
+
+    text-transform: uppercase;
+}
+
+.articles {
+    height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured {
+    margin-top: 6vh;
+
+    position: relative;
+    
+    width: 79.79vw;
+    height: 37vh;
+}
+
+.latestArticles {
+    width: 79.79vw;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: -1vh;
+}
+
+.article {
+    position: relative;
+
+    width: 26vw;
+    height: 20vh;
+}
+
+.cover {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    filter: brightness(0.8);
+}
+
+.infos {
+    text-align: right;
+
+    color: #FFFFFF;
+
+    margin-right: 2%;
+}
+
+.postURL {
+    text-decoration: none;
+}
+
+.infos .title {
+    font-family: "Outfit Bold";
+    
+    display: inline-block;
+}
+
+.featured:hover .infos>.title {
+    text-decoration: underline;
+}
+
+.article:hover .infos>.title {
+    text-decoration: underline;
+}
+
+.featured .infos .title {
+    font-size: 3vw;
+    width: 40vw;
+}
+
+.article .infos .title {
+    font-size: 1.4vw;
+    width: 15vw;
+}
+
+.infos .date {
+    font-family: "Outfit Bold";
+}
+
+.featured .infos .date {
+    font-size: 1.3vw;
+}
+
+.article .infos .date {
+    font-size: 1vw;
+}
+
+.infos {
+    position: absolute;
+    z-index: 1;
+    bottom: -1%;
+}
+
+.featured .infos {
+    margin-left: 47%;
+}
+
+.article .infos {
+    margin-left: 39%;
+}

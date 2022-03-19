@@ -1,0 +1,65 @@
+---
+layout: pager
+title: Culture
+permalink: /culture/
+pagination: 
+  enabled: true
+  category: culture
+  permalink: /:num/
+---
+{% assign firstLine = paginator.posts | slice: 0, 3 %}
+{% assign secondLine = paginator.posts | slice: 3, 5 %}
+
+<div class="articles">
+    <p>
+        <div class="latestArticles">
+            {% for post in firstLine %}
+                <div class="article">
+                    <a class="postURL" href="{{ post.url }}">
+                        <img class="cover" src="{{ site.url }}/assets/images/{{ post.banner }}" alt="" srcset="">
+
+                        <p class="infos">
+                            <span class="title">{{ post.title }}</span>
+                            <br>
+                            <span class="date">{{ post.date | date: "%d/%m/%Y" }}</span>
+                        </p>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+
+        <br>
+
+        <div class="latestArticles">
+            {% for post in secondLine %}
+                <div class="article">
+                    <a class="postURL" href="{{ post.url }}">
+                        <img class="cover" src="{{ site.url }}/assets/images/{{ post.banner }}" alt="" srcset="">
+
+                        <p class="infos">
+                            <span class="title">{{ post.title }}</span>
+                            <br>
+                            <span class="date">{{ post.date | date: "%d/%m/%Y" }}</span>
+                        </p>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </p>
+
+    {% if paginator.total_pages > 1 %}
+        <ul class="pagerButtons">
+            {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path }}">
+                    <button>INTERVIEWS PRECEDENTES</button>
+                </a>
+            {% endif %}
+
+            {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path }}">
+                    <button>INTERVIEWS SUIVANTES</button>
+                </a>
+            {% endif %}
+        </ul>
+    {% endif %}
+</div>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FELOS</title>
+
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/fonts.css">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/header.css">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/post.css">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/footer.css">
+
+    <link rel="shortcut icon" href="{{ site.url }}/assets/images/Favicon.png" type="image/png">
+
+    <meta property="og:site_name" content="FELOS" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ page.url }}" />
+    <meta property="og:title" content="FELOS" />
+    <meta property="og:description" content="{{ page.description }}" />
+    <meta property="og:image" content="{{ site.url }}/assets/images/Favicon.png" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="FELOS" />
+    <meta name="twitter:description" content="{{ page.description }}" />
+    <meta name="twitter:image" content="{{ site.url }}/assets/images/Favicon.png" />
+</head>
+
+<body>
+    <div class="page_container">
+        <div class="content_container">
+            <div class="head">
+                <div class="header">
+                    <p>
+                        <a href="{{ site.url }}">
+                            <h1 class="title">FELOS</h1>
+                        </a>
+                        <br>
+                        <span class="tagline">NOS INFORMATIONS POUR VOTRE REFLEXION</span>
+                    </p>
+                </div>
+
+                <div class="navbar">
+                    <a class="filinfo" href="/fil_info">FIL INFO</a>
+                    <a class="breves" href="/breves">BREVES</a>
+                    <a class="interviews" href="/interviews">INTERVIEWS</a>
+                    <a class="culture" href="/culture">CULTURE</a>
+                    <a class="monde" href="/monde">MONDE</a>
+                    <a class="videos" href="/videos">VIDEOS</a>
+                    <a class="notre_equipe" href="/notre_equipe">NOTRE EQUIPE</a>
+                    <a class="temoigner" href="/temoigner">TEMOIGNER</a>
+                </div>
+            </div>
+
+            <div class="article">
+                <h2 class="articleTitle">{{ page.title }}</h2>
+
+                <img class="banner" src="{{ site.url}}/assets/images/{{ page.banner }}" alt="">
+
+                <p class="infos">
+                    <span class="author">Par {{ page.author }}</span>
+                    <br>
+                    <span class="date">Le {{ page.date | date: "%d/%m/%Y a %HH%M" }}</span>
+                </p>
+
+                <p class="article">
+                    {{ content }}
+                </p>
+
+                <p class="latestArticlesLabel">Derniers articles</p>
+
+                <div class="latestArticles">
+                    {% for post in site.posts limit:3 %}
+                        <div class="articleSug">
+                            <a class="articleSugURL" href="{{ post.url }}">
+                                <img class="articleSugCover" src="{{ site.url }}/assets/images/{{ post.banner }}" alt="" srcset="">
+            
+                                <p class="articleSugInfos">
+                                    <span class="articleSugTitle">{{ post.title }}</span>
+                                    <br>
+                                    <span class="articleSugDate">{{ post.date | date: "%d/%m/%Y" }}</span>
+                                </p>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="links">
+                <p class="felos">FELOS</p>
+                <p>A propos</p>
+                <p>Nous contacter</p>
+                <p>Nos partenaires</p>
+                <p>Devenir annonceur</p>
+                <p>Mentions legales</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
