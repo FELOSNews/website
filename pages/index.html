@@ -15,7 +15,7 @@ permalink: /
                     <span class="date">{{ latestArticle.date | date: "%d/%m/%Y" }}</span>
                 </p>
 
-                <img class="cover" src="{{ site.url }}/assets/images/{{ latestArticle.banner }}" alt="" srcset="">
+                <img class="cover" src="/assets/images/{{ latestArticle.banner }}" alt="" srcset="">
             </a>
 
         </div>
@@ -26,7 +26,7 @@ permalink: /
             {% for post in latestArticles %}
                 <div class="article">
                     <a class="postURL" href="{{ post.url }}">
-                        <img class="cover" src="{{ site.url }}/assets/images/{{ latestArticle.banner }}" alt="" srcset="">
+                        <img class="cover" src="/assets/images/{{ latestArticle.banner }}" alt="" srcset="">
 
                         <p class="infos">
                             <span class="title">{{ post.title }}</span>

@@ -16,7 +16,7 @@ pagination:
             {% for post in firstLine %}
                 <div class="article">
                     <a class="postURL" href="{{ post.url }}">
-                        <img class="cover" src="{{ site.url }}/assets/images/{{ post.banner }}" alt="" srcset="">
+                        <img class="cover" src="/assets/images/{{ post.banner }}" alt="" srcset="">
 
                         <p class="infos">
                             <span class="title">{{ post.title }}</span>
@@ -34,7 +34,7 @@ pagination:
             {% for post in secondLine %}
                 <div class="article">
                     <a class="postURL" href="{{ post.url }}">
-                        <img class="cover" src="{{ site.url }}/assets/images/{{ post.banner }}" alt="" srcset="">
+                        <img class="cover" src="/assets/images/{{ post.banner }}" alt="" srcset="">
 
                         <p class="infos">
                             <span class="title">{{ post.title }}</span>
