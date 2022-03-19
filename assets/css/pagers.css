@@ -94,4 +94,6 @@ html, body {
     font-size: 2vh;
 
     background: linear-gradient(90deg, #FF0000 0%, #FFFF00 115%);
+
+    cursor: pointer;
 }
