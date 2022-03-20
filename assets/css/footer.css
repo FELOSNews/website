@@ -1,8 +1,10 @@
 .footer {
-    height: 9vh;
+    height: 12vh;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     color: #FFFFFF;
     background: linear-gradient(270deg, #FFFFFF -19.92%, #545454 100%, #000000 100%);
@@ -34,4 +36,12 @@
     font-family: "Outfit Bold";
 
     font-size: 1.5vw;
+}
+
+.footer .socials a {
+    margin-left: 1vw;
+    
+    font-size: 1.3vw;
+    color: #FFFFFF;
+    text-decoration: none;
 }
