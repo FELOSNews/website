@@ -38,6 +38,10 @@
     font-size: 1.5vw;
 }
 
+.footer .socials {
+    margin-top: -2vh;
+}
+
 .footer .socials a {
     margin-left: 1vw;
     

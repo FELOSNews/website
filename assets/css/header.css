@@ -1,11 +1,9 @@
 .content_container {
-    min-height: 91vh;
+    min-height: 88vh;
 }
 
 .head {
     min-height: 21vh;
-
-    margin-bottom: -2vh;
 }
 
 .head .header {
@@ -20,6 +18,7 @@
 
     background: linear-gradient(90deg, #FF0000 0%, #FFFF00 100%);
 }
+
 .header .title {
     font-family: "Outfit Black";
 
@@ -29,7 +28,7 @@
 .header .title a {
     color: #FFFFFF;
     text-decoration: none;
-    font-size: 5vw;
+    font-size: 4vw;
 }
 
 .header .tagline {
@@ -61,4 +60,8 @@
 
 .navbar a:hover {
     text-decoration: underline;
+}
+
+.spawn {
+    height: 100vh;
 }
