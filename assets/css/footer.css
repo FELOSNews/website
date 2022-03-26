@@ -21,6 +21,8 @@
     width: 79.79vw;
 
     font-size: 1.3vw;
+
+    text-transform: uppercase;
 }
 
 .footer .links a {
