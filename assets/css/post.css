@@ -51,6 +51,11 @@ html, body {
     font-size: 1.9vh;
 }
 
+.article a {
+    color: #000000;
+    text-decoration: underline;
+}
+
 .latestArticlesLabel {
     text-transform: uppercase;
     
