@@ -1,6 +1,6 @@
 ---
 layout: corporate
-banner: banners/Manifeste.png
+banner: banners/Manifesto.png
 
 permalink: /a_propos/
 ---
