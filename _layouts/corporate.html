@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FELOS</title>
+
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/post.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+
+    <link rel="shortcut icon" href="/assets/images/Favicon.png" type="image/png">
+
+    <meta property="og:site_name" content="FELOS" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ page.url }}" />
+    <meta property="og:title" content="FELOS" />
+    <meta property="og:description" content="{{ page.description }}" />
+    <meta property="og:image" content="/assets/images/Favicon.png" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="FELOS" />
+    <meta name="twitter:description" content="{{ page.description }}" />
+    <meta name="twitter:image" content="/assets/images/Favicon.png" />
+</head>
+
+<body>
+    <div class="content_container">
+        <div class="head">
+            <div class="header">
+                <p>
+                    <a href="/">
+                        <h1 class="title">FELOS</h1>
+                    </a>
+                    <span class="tagline">NOS INFORMATIONS POUR VOTRE REFLEXION</span>
+                </p>
+            </div>
+
+            <div class="navbar">
+                <a class="breves" href="/breves">BREVES</a>
+                <a class="interviews" href="/interviews">INTERVIEWS</a>
+                <a class="culture" href="/culture">CULTURE</a>
+                <a class="monde" href="/monde">MONDE</a>
+                <a class="videos" href="/videos">VIDEOS</a>
+                <a class="notre_equipe" href="/notre_equipe">NOTRE EQUIPE</a>
+                <a class="temoigner" href="/temoigner">TEMOIGNER</a>
+            </div>
+        </div>
+
+        <div class="article">
+            <h2 class="articleTitle">{{ page.title }}</h2>
+
+            <img class="banner" src="/assets/images/{{ page.banner }}" alt="">
+
+            <p class="article">
+                {{ content }}
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="links">
+            <p class="felos">FELOS</p>
+            <a href="/a_propos">A propos</a>
+            <a href="/partenaires">Nos partenaires</a>
+            <a href="/contact">Nous contacter</a>
+            <a href="/devenir_annonceur">Devenir annonceur</a>
+            <a href="/legal">Mentions legales</a>
+        </div>
+
+        <div class="socials">
+            <a href="https://twitter.com/felosnews"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-twitch"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+            <a href="#"><i class="bi bi-mic-fill"></i></a>
+            <a href="#"><i class="bi bi-discord"></i></a>
+        </div>
+    </div>
+</body>
+
+</html>
