@@ -7,7 +7,7 @@ html, body {
 }
 
 .articles {
-    height: 60vh;
+    height: 79vh;
 
     display: flex;
     flex-direction: column;
