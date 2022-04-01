@@ -11,7 +11,8 @@ Nous croyons aujourd’hui à un **journalisme utile** pour ses lecteurs. Un jou
 Nous souhaitons vous fournir des informations **justes** et **claires** afin que vous puissiez vous forger **vos propres avis** sur des thématiques aussi importantes que diverses.
 
 Cependant, nous ne pourrons pas atteindre ce but seuls. Nous avons besoin de **VOUS** !  
-En plus d’un média **indépendant** et **utile**, ce qui est déjà beaucoup, nous voulons mettre un œuvre un média collaboratif.Il nous est d’avis que le lecteur ne peut plus seulement être spectateur de ce qu’il se passe autour de lui, mais plonger dedans pour mieux la comprendre.
+En plus d’un média **indépendant** et **utile**, ce qui est déjà beaucoup, nous voulons mettre un œuvre un média collaboratif.  
+Il nous est d’avis que le lecteur ne peut plus seulement être spectateur de ce qu’il se passe autour de lui, mais plonger dedans pour mieux la comprendre.
 
 **FELOS** est un média en ligne d’information, de décryptage.  
 **FELOS** est indépendant, collaboratif.  
