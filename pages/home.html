@@ -2,8 +2,8 @@
 layout: home
 permalink: /
 ---
-{% assign latestArticle = site.posts | sort: 'last_updated' | reverse | last %}
-{% assign latestArticles = site.posts | sort: 'last_updated' | slice: 1,3 %}
+{% assign latestArticle = site.posts | reverse | last %}
+{% assign latestArticles = site.posts | slice: 1,3 %}
 
 <div class="articles">
     <p>
