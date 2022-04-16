@@ -5,6 +5,9 @@ banner: 2021/03/mire.jpeg
 
 author: "Lorem Ipsum"
 
+description: "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum"
+
 date: 2022-03-30 19:48:00 +0200
 
 categories: interviews videos breves monde culture
