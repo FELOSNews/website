@@ -9,7 +9,7 @@
     color: #FFFFFF;
     background: linear-gradient(270deg, #FFFFFF -19.92%, #545454 100%, #000000 100%);
 
-    font-family: "Outfit Light";    
+    font-family: "Outfit Light";
 }
 
 .footer .links {
@@ -17,7 +17,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    
+
     width: 79.79vw;
 
     font-size: 1vw;
@@ -46,8 +46,40 @@
 
 .footer .socials a {
     margin-left: 1vw;
-    
-    font-size: 17px;
+
+    font-size: 1vw;
+
     color: #FFFFFF;
     text-decoration: none;
+}
+
+@media screen and (max-width: 1299px) {
+    .footer .links .felos {
+        font-size: 2vw;
+    }
+
+
+    .footer .links, .footer .socials a {
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width: 959px) {
+    .footer .links .felos {
+        font-size: 2.3vw;
+    }
+
+    .footer .links, .footer .socials a {
+        font-size: 1.8vw;
+    }
+}
+
+@media screen and (max-width: 649px) {
+    .footer .links .felos {
+        font-size: 2.5vw;
+    }
+
+    .footer .links, .footer .socials a {
+        font-size: 2vw;
+    }
 }
