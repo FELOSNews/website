@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     height: 100%;
 
     margin: 0;
@@ -7,8 +8,6 @@ html, body {
 }
 
 .articles {
-    height: 73vh;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,30 +16,15 @@ html, body {
 
 .featured {
     margin-top: 1vh;
+    margin-bottom: 2vh;
 
     position: relative;
-    
+
     width: 79.79vw;
     height: 37vh;
 }
 
-.latestArticles {
-    width: 79.79vw;
-
-    display: flex;
-    justify-content: space-between;
-
-    margin-top: -1vh;
-}
-
-.article {
-    position: relative;
-
-    width: 26vw;
-    height: 20vh;
-}
-
-.cover {
+.coverImg {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -50,64 +34,189 @@ html, body {
     filter: brightness(0.8);
 }
 
-.infos {
+.postURL {
+    text-decoration: none;
+}
+
+.featured .infos {
     text-align: right;
 
     color: #FFFFFF;
 
     margin-right: 2%;
+    margin-left: 47%;
+
+    position: absolute;
+    z-index: 1;
+    bottom: -1%;
 }
 
-.postURL {
-    text-decoration: none;
-}
-
-.infos .title {
+.featured .infos .title {
     font-family: "Outfit Bold";
-    
+
     display: inline-block;
+
+
+    font-size: 3vw;
+    width: 40vw;
+}
+
+.featured .infos .date {
+    font-family: "Outfit Bold";
+    font-size: 1.3vw;
 }
 
 .featured:hover .infos>.title {
     text-decoration: underline;
 }
 
-.article:hover .infos>.title {
-    text-decoration: underline;
+
+.latestArticles {
+    width: 82.79vw;
+
+    margin-top: -1vh;
+    margin-left: 3vw;
 }
 
-.featured .infos .title {
-    font-size: 3vw;
-    width: 40vw;
+.article {
+    background-color: #F6F6F6;
+
+    border-radius: 10px;
+
+    display: inline-block;
+
+    margin-bottom: 1.5vh;
+
+    margin-right: 2.2vw;
+    width: 25vw;
 }
 
-.article .infos .title {
-    font-size: 1.4vw;
-    width: 15vw;
-}
-
-.infos .date {
-    font-family: "Outfit Bold";
-}
-
-.featured .infos .date {
-    font-size: 1.3vw;
-}
-
-.article .infos .date {
-    font-size: 1vw;
-}
-
-.infos {
-    position: absolute;
-    z-index: 1;
-    bottom: -1%;
-}
-
-.featured .infos {
-    margin-left: 47%;
+.article .cover {
+    height: 25vh;
+    width: 25vw;
 }
 
 .article .infos {
-    margin-left: 39%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.article .infos .title {
+    font-family: "Outfit Bold";
+    font-size: 2vw;
+}
+
+.article .infos .meta {
+    font-family: "Outfit Regular";
+    font-size: 0.8vw;
+
+    opacity: 50%;
+}
+
+.article .infos .description {
+    display: block;
+
+    font-family: "Outfit Medium";
+    font-size: 1vw;
+
+    text-transform: initial;
+
+    margin-top: 1vh;
+}
+
+.article .infos .openArticle {
+    display: block;
+
+    background-color: #E0E0E0;
+
+    color: #9C9C9C;
+    text-decoration: none;
+    font-family: "Outfit SemiBold";
+    font-size: 1vw;
+
+    border-radius: 6.86px;
+
+    padding: 2%;
+}
+
+@media screen and (max-width: 1299px) {
+    .article {
+        width: 39vw;
+    }
+
+    .article .cover {
+        height: 25vh;
+        width: 39vw;
+    }
+}
+
+@media screen and (max-width: 1016px) {
+    .article {
+        margin-right: 1.7vw;
+        width: 39vw;
+    }
+
+    .article .cover {
+        height: 25vh;
+        width: 39vw;
+    }
+
+    .article .infos .meta {
+        font-size: 1vw;
+    }
+
+    .article .infos .description, .article .infos .openArticle {
+        font-size: 1.2vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .latestArticles {
+        width: 87.79vw;
+
+        margin-top: -1vh;
+        margin-left: 8vw;
+    }
+
+    .article {
+        width: 39vw;
+    }
+
+    .article .cover {
+        height: 20vh;
+        width: 39vw;
+    }
+
+    .article .infos .description, .article .infos .openArticle {
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .article {
+        width: 79.79vw;
+    }
+
+    .article .cover {
+        height: 15vh;
+        width: 79.79vw;
+    }
+
+    .article .infos {
+        margin-top: 1vw;
+    }
+
+    .article .infos .meta {
+        display: block;
+    
+        margin-bottom: -2vh;
+
+        font-size: 1.2vw;
+    }
+
+    .article .infos .description, .article .infos .openArticle {
+        font-size: 1.8vw;
+
+        margin-top: -1vw;
+    }
 }

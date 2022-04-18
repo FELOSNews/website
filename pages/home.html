@@ -3,7 +3,7 @@ layout: home
 permalink: /
 ---
 {% assign latestArticle = site.posts | reverse | last %}
-{% assign latestArticles = site.posts | slice: 1,3 %}
+{% assign latestArticles = site.posts | slice: 1,10 %}
 
 <div class="articles">
     <p>
@@ -15,9 +15,8 @@ permalink: /
                     <span class="date">{{ latestArticle.date | date: "%d/%m/%Y" }}</span>
                 </p>
 
-                <img class="cover" src="/assets/images/{{ latestArticle.banner }}" alt="" srcset="">
+                <img class="coverImg" src="/assets/images/{{ latestArticle.banner }}" alt="" srcset="">
             </a>
-
         </div>
 
         <br>
@@ -25,15 +24,19 @@ permalink: /
         <div class="latestArticles">
             {% for post in latestArticles %}
                 <div class="article">
-                    <a class="postURL" href="{{ post.url }}">
-                        <img class="cover" src="/assets/images/{{ latestArticle.banner }}" alt="" srcset="">
+                    <div class="cover">
+                        <img class="coverImg" src="/assets/images/{{ latestArticle.banner }}" alt="" srcset="">
+                    </div>
 
-                        <p class="infos">
-                            <span class="title">{{ post.title }}</span>
-                            <br>
-                            <span class="date">{{ post.date | date: "%d/%m/%Y" }}</span>
-                        </p>
-                    </a>
+                    <p class="infos">
+                        <span class="title">{{ post.title }}</span>
+                        <br>
+                        <span class="meta">{{ post.author }} <span class="dot">⋅</span> {{ post.date | date: "%d/%m/%Y" }}</span>
+                        <br>
+                        <span class="description">{{ post.description }}</span>
+                        <br>
+                        <a class="openArticle" href="{{ post.url }}">Lire la suite</a>
+                    </p>
                 </div>
             {% endfor %}
         </div>
