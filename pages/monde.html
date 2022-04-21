@@ -13,35 +13,21 @@ pagination:
 <div class="articles">
     <p>
         <div class="latestArticles">
-            {% for post in firstLine %}
+            {% for post in paginator.posts %}
                 <div class="article">
-                    <a class="postURL" href="{{ post.url }}">
-                        <img class="cover" src="/assets/images/{{ post.banner }}" alt="" srcset="">
+                    <div class="cover">
+                        <img class="coverImg" src="/assets/images/{{ post.banner }}" alt="" srcset="">
+                    </div>
 
-                        <p class="infos">
-                            <span class="title">{{ post.title }}</span>
-                            <br>
-                            <span class="date">{{ post.date | date: "%d/%m/%Y" }}</span>
-                        </p>
-                    </a>
-                </div>
-            {% endfor %}
-        </div>
-
-        <br>
-
-        <div class="latestArticles">
-            {% for post in secondLine %}
-                <div class="article">
-                    <a class="postURL" href="{{ post.url }}">
-                        <img class="cover" src="/assets/images/{{ post.banner }}" alt="" srcset="">
-
-                        <p class="infos">
-                            <span class="title">{{ post.title }}</span>
-                            <br>
-                            <span class="date">{{ post.date | date: "%d/%m/%Y" }}</span>
-                        </p>
-                    </a>
+                    <p class="infos">
+                        <span class="title">{{ post.title }}</span>
+                        <br>
+                        <span class="meta">{{ post.author }} <span class="dot">⋅</span> {{ post.date | date: "%d/%m/%Y" }}</span>
+                        <br>
+                        <span class="description">{{ post.description }}</span>
+                        <br>
+                        <a class="openArticle" href="{{ post.url }}">Lire la suite</a>
+                    </p>
                 </div>
             {% endfor %}
         </div>

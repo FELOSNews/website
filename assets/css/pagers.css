@@ -7,31 +7,13 @@ html, body {
 }
 
 .articles {
-    height: 73vh;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.latestArticles {
-    width: 79.79vw;
-
-    display: flex;
-    justify-content: space-between;
-
-    margin-top: -1vh;
-}
-
-.article {
-    position: relative;
-
-    width: 26vw;
-    height: 20vh;
-}
-
-.cover {
+.coverImg {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -41,42 +23,159 @@ html, body {
     filter: brightness(0.8);
 }
 
-.infos {
-    text-align: right;
-
-    color: #FFFFFF;
-
-    margin-right: 2%;
-
-    position: absolute;
-    z-index: 1;
-    bottom: -1%;
-
-    margin-left: 39%;
-}
-
 .postURL {
     text-decoration: none;
 }
 
-.infos .title {
-    font-family: "Outfit Bold";
-    
+
+.latestArticles {
+    width: 82.79vw;
+
+    margin-top: -1vh;
+    margin-left: 3vw;
+}
+
+.article {
+    background-color: #F6F6F6;
+
+    border-radius: 10px;
+
     display: inline-block;
+
+    margin-bottom: 1.5vh;
+
+    margin-right: 2.2vw;
+    width: 25vw;
 }
 
-.article:hover .infos>.title {
-    text-decoration: underline;
+.article .cover {
+    height: 25vh;
+    width: 25vw;
 }
 
-.infos .title {
-    font-size: 1.4vw;
-    width: 15vw;
+.article .infos {
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
-.infos .date {
+.article .infos .title {
     font-family: "Outfit Bold";
+    font-size: 2vw;
+}
+
+.article .infos .meta {
+    font-family: "Outfit Regular";
+    font-size: 0.8vw;
+
+    opacity: 50%;
+}
+
+.article .infos .description {
+    display: block;
+
+    font-family: "Outfit Medium";
     font-size: 1vw;
+
+    text-transform: initial;
+
+    margin-top: 1vh;
+}
+
+.article .infos .openArticle {
+    display: block;
+
+    background-color: #E0E0E0;
+
+    color: #9C9C9C;
+    text-decoration: none;
+    font-family: "Outfit SemiBold";
+    font-size: 1vw;
+
+    border-radius: 6.86px;
+
+    padding: 2%;
+}
+
+@media screen and (max-width: 1299px) {
+    .article {
+        width: 39vw;
+    }
+
+    .article .cover {
+        height: 25vh;
+        width: 39vw;
+    }
+}
+
+@media screen and (max-width: 1016px) {
+    .article {
+        margin-right: 1.7vw;
+        width: 39vw;
+    }
+
+    .article .cover {
+        height: 25vh;
+        width: 39vw;
+    }
+
+    .article .infos .meta {
+        font-size: 1vw;
+    }
+
+    .article .infos .description, .article .infos .openArticle {
+        font-size: 1.2vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .latestArticles {
+        width: 87.79vw;
+
+        margin-top: -1vh;
+        margin-left: 8vw;
+    }
+
+    .article {
+        width: 39vw;
+    }
+
+    .article .cover {
+        height: 20vh;
+        width: 39vw;
+    }
+
+    .article .infos .description, .article .infos .openArticle {
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .article {
+        width: 79.79vw;
+    }
+
+    .article .cover {
+        height: 15vh;
+        width: 79.79vw;
+    }
+
+    .article .infos {
+        margin-top: 1vw;
+    }
+
+    .article .infos .meta {
+        display: block;
+    
+        margin-bottom: -2vh;
+
+        font-size: 1.2vw;
+    }
+
+    .article .infos .description, .article .infos .openArticle {
+        font-size: 1.8vw;
+
+        margin-top: -1vw;
+    }
 }
 
 .pagerButtons a {
