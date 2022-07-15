@@ -96,6 +96,16 @@ html, body {
     padding: 2%;
 }
 
+@media screen and (max-width: 1499px) {
+    .article .infos .meta {
+        font-size: 1vw;
+    }
+
+    .article .infos .description, .article .infos .openArticle {
+        font-size: 1.2vw;
+    }
+}
+
 @media screen and (max-width: 1299px) {
     .article {
         width: 39vw;
@@ -104,6 +114,14 @@ html, body {
     .article .cover {
         height: 25vh;
         width: 39vw;
+    }
+
+    .article .infos .meta {
+        font-size: 1.2vw;
+    }
+
+    .article .infos .description, .article .infos .openArticle {
+        font-size: 1.5vw;
     }
 }
 
@@ -119,15 +137,35 @@ html, body {
     }
 
     .article .infos .meta {
-        font-size: 1vw;
+        font-size: 1.5vw;
     }
 
     .article .infos .description, .article .infos .openArticle {
-        font-size: 1.2vw;
+        font-size: 1.7vw;
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 930px) {
+    .article {
+        margin-right: 1.7vw;
+        width: 39vw;
+    }
+
+    .article .cover {
+        height: 25vh;
+        width: 39vw;
+    }
+
+    .article .infos .meta {
+        font-size: 1.7vw;
+    }
+
+    .article .infos .description, .article .infos .openArticle {
+        font-size: 1.9vw;
+    }
+}
+
+@media screen and (max-width: 745px) {
     .latestArticles {
         width: 87.79vw;
 
@@ -144,8 +182,47 @@ html, body {
         width: 39vw;
     }
 
+    .article .infos .title {
+        font-size: 2.7vw;
+    }
+
+    .article .infos .meta {
+        font-size: 1.9vw;
+    }
+
     .article .infos .description, .article .infos .openArticle {
-        font-size: 1.5vw;
+        font-size: 2.2vw;
+    }
+}
+
+@media screen and (max-width: 635px) {
+    .article {
+        width: 79.79vw;
+    }
+
+    .article .cover {
+        height: 15vh;
+        width: 79.79vw;
+    }
+
+    .article .infos {
+        margin-top: 1vw;
+    }
+
+    .article .infos .title {
+        font-size: 3vw;
+    }
+
+    .article .infos .meta {
+        display: block;
+
+        font-size: 1.9vw;
+    }
+
+    .article .infos .description, .article .infos .openArticle {
+        font-size: 2.5vw;
+
+        margin-top: -1vw;
     }
 }
 
@@ -163,16 +240,80 @@ html, body {
         margin-top: 1vw;
     }
 
+    .article .infos .title {
+        font-size: 3.2vw;
+    }
+
     .article .infos .meta {
         display: block;
-    
-        margin-bottom: -2vh;
 
-        font-size: 1.2vw;
+        font-size: 2.1vw;
     }
 
     .article .infos .description, .article .infos .openArticle {
-        font-size: 1.8vw;
+        font-size: 2.9vw;
+
+        margin-top: -1vw;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .article {
+        width: 79.79vw;
+    }
+
+    .article .cover {
+        height: 15vh;
+        width: 79.79vw;
+    }
+
+    .article .infos {
+        margin-top: 1vw;
+    }
+
+    .article .infos .title {
+        font-size: 3.5vw;
+    }
+
+    .article .infos .meta {
+        display: block;
+
+        font-size: 2.4vw;
+    }
+
+    .article .infos .description, .article .infos .openArticle {
+        font-size: 3vw;
+
+        margin-top: -1vw;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .article {
+        width: 79.79vw;
+    }
+
+    .article .cover {
+        height: 15vh;
+        width: 79.79vw;
+    }
+
+    .article .infos {
+        margin-top: 1vw;
+    }
+
+    .article .infos .title {
+        font-size: 4vw;
+    }
+
+    .article .infos .meta {
+        display: block;
+
+        font-size: 2.7vw;
+    }
+
+    .article .infos .description, .article .infos .openArticle {
+        font-size: 3.5vw;
 
         margin-top: -1vw;
     }
