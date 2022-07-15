@@ -1,6 +1,6 @@
 ---
 layout: corporate
-banner: banners/Privacy.png
+title: Confidentiali<br>té
 
 permalink: /privacy/
 ---

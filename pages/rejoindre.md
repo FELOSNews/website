@@ -1,6 +1,6 @@
 ---
 layout: corporate
-banner: banners/Join us.png
+title: Nous<br>rejoindre
 
 permalink: /rejoindre/
 ---

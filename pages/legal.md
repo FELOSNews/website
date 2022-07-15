@@ -1,6 +1,6 @@
 ---
 layout: corporate
-banner: banners/Legal.png
+title: Mentions<br>légales
 
 permalink: /legal/
 ---

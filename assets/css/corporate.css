@@ -1,0 +1,48 @@
+html, body {
+    height: 100%;
+
+    margin: 0;
+}
+
+.article {
+    margin-top: 2.5%;
+    margin-left: 10vw;
+
+    width: 55vw;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+
+    border-radius: 15px;
+
+    width: 70vw;
+    height: 35vh;
+
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding-left: 2vw;
+
+    color: #FFFFFF;
+    background-color: #FF9315;
+
+    font-family: "Rubik";
+    font-weight: 900;
+    font-size: 5vw;
+
+    text-transform: uppercase;
+}
+
+.article {
+    margin-top: -1vh;
+
+    font-family: "Rubik";
+    font-weight: 400;
+    font-size: 2.3vh;
+}
+
+.article a {
+    color: #000000;
+    text-decoration: underline;
+}
