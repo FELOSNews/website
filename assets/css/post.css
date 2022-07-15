@@ -12,7 +12,8 @@ html, body {
 }
 
 .articleTitle {
-    font-family: "Outfit SemiBold";
+    font-family: "Rubik";
+    font-weight: 700;
     text-transform: uppercase;
 
     font-size: 3.5vh;
@@ -32,7 +33,7 @@ html, body {
     color: #000000;
     opacity: 50%;
 
-    font-family: "Outfit Medium";
+    font-family: "Rubik";
     text-transform: uppercase;
 }
 
@@ -46,8 +47,9 @@ html, body {
 
 .article {
     margin-top: -1vh;
-    font-family: "Outfit Regular";
 
+    font-family: "Rubik";
+    font-weight: 400;
     font-size: 2.3vh;
 }
 
@@ -59,7 +61,8 @@ html, body {
 .latestArticlesLabel {
     text-transform: uppercase;
     
-    font-family: "Outfit SemiBold";
+    font-family: "Rubik";
+    font-weight: 600;
     font-size: 2.5vh;
 
     margin-top: 10vh;
@@ -108,7 +111,8 @@ html, body {
 }
 
 .articleSugInfos .articleSugTitle {
-    font-family: "Outfit Bold";
+    font-family: "Rubik";
+    font-weight: 600;
     
     display: inline-block;
 
@@ -122,7 +126,8 @@ html, body {
 }
 
 .articleSugInfos .articleSugDate {
-    font-family: "Outfit Bold";
+    font-family: "Rubik";
+    font-weight: 500;
     font-size: 1.9vh;
 }
 

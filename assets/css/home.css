@@ -52,7 +52,8 @@ body {
 }
 
 .featured .infos .title {
-    font-family: "Outfit Bold";
+    font-family: "Rubik";
+    font-weight: 600;
 
     display: inline-block;
 
@@ -62,7 +63,7 @@ body {
 }
 
 .featured .infos .date {
-    font-family: "Outfit Bold";
+    font-family: "Rubik";
     font-size: 1.3vw;
 }
 
@@ -102,12 +103,12 @@ body {
 }
 
 .article .infos .title {
-    font-family: "Outfit Bold";
+    font-family: "Rubik";
     font-size: 2vw;
 }
 
 .article .infos .meta {
-    font-family: "Outfit Regular";
+    font-family: "Rubik";
     font-size: 0.8vw;
 
     opacity: 50%;
@@ -116,7 +117,8 @@ body {
 .article .infos .description {
     display: block;
 
-    font-family: "Outfit Medium";
+    font-family: "Rubik";
+    font-weight: 600;
     font-size: 1vw;
 
     text-transform: initial;
@@ -131,7 +133,7 @@ body {
 
     color: #9C9C9C;
     text-decoration: none;
-    font-family: "Outfit SemiBold";
+    font-family: "Rubik";
     font-size: 1vw;
 
     border-radius: 6.86px;

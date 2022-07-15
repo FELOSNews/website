@@ -20,7 +20,8 @@
 }
 
 .header .title {
-    font-family: "Outfit Black";
+    font-family: "Rubik";
+    font-weight: 900;
 
     margin: 0;
 }
@@ -32,7 +33,8 @@
 }
 
 .header .tagline {
-    font-family: "Outfit ExtraBold";
+    font-family: "Rubik";
+    font-weight: 700;
 
     font-size: 1.5vw;
 }
@@ -50,7 +52,7 @@
 }
 
 .navbar a {
-    font-family: "Outfit Medium";
+    font-family: "Rubik";
     font-size: 2vw;
 
     text-decoration: none;
