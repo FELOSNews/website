@@ -7,7 +7,7 @@ author: "Killiane Letellier"
 
 description: "Le saviez-vous ? La guerre la plus courte de l'histoire a duré 37 minutes."
 
-date: 2022-11-01 08:00:00 +0100
+date: 2022-11-07 08:00:00 +0100
 
 categories: culture
 ---
