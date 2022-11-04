@@ -45,6 +45,10 @@ html, body {
     font-size: 1.9vh;
 }
 
+h3 {
+    margin-bottom: -1.5vh;
+}
+
 .article {
     margin-top: -1vh;
 
